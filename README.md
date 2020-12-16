@@ -38,7 +38,7 @@ Criamos os diretórios no nosso HDFS e alteramos as permissões para nosso usuá
 Após acessar o [link](https://www.kaggle.com/rdoume/beerreviews/) para o dataset e fazer o download local do arquivo `beer_reviews.csv`, fazemos a ingestão desse arquivo no nosso HDFS:
 
 ```
-hdfs dfs -put beer_reviews.csv /user/gpfl/beer
+hdfs dfs -put beer_reviews.csv /user/$USER/beer
 ```
 
 ## Análise de dados em PySpark
