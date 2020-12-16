@@ -11,7 +11,7 @@ Para rodar o código do trabalho é necessário ter instalado os seguintes pacot
 * Python 3.6
 * Jupyterlab 2.2.9
 
-## Configuração
+## Configuração do Ambiente Hadoop
 
 ### Exportando variáveis de ambiente
 Esse trabalho utiliza algumas variáveis de ambiente do `hadoop` e `spark`, contidas no script abaixo:
@@ -25,6 +25,13 @@ Iniciamos os serviços `namenode` e `datanode` do hadoop, e `resourcemanager` e 
 
 ```
 . ./hadoop_start.sh
+```
+
+### Criando diretórios e alterando permissões no HDFS
+Criamos os diretórios no nosso HDFS e alteramos as permissões para nosso usuário hadoop utilizando o script abaixo:
+
+```
+. ./hadoop_create_dirs.sh
 ```
 
 ## Ingestão do dado no HDFS
